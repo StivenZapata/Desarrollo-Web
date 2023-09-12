@@ -1,0 +1,84 @@
+body{
+    color:  #fff;
+    background-color:  #3aafab;
+    font: normal 18px"Fira sans","Helvetica Neue", sans-serif;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto 10px auto ;
+}
+/*
+*significa que se le aplica todo
+la propiedad que se especifica.
+*/
+.container *{
+    box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner{
+    /*quito los puntos de los ul y li*/
+    list-style-type: none;
+    /*no me quite espacio del contenido*/
+    padding: 0;
+}
+
+.flex-outer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*se le aplica a todos los hijos de la clase flex-outer
+> li a todos los li que son hijos de la clase flex-outer
+*/
+.flex-outer > li:not(:last-child){
+    margin-bottom: 20px;
+}
+.flex-inner{
+    padding: 0 8px;
+    justify-content: space-evenly;
+}
+
+.flex-outer li label,
+.flex-outer li p{
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    padding: 8px;
+    font-weight: 300;
+}
+
+.flex-outer >li >label,
+.flex-outer >li >p{
+    flex: 1 0 120px;
+    max-width: 200px;
+}
+
+.flex-outer >li >label + *,
+.flex-inner{
+    flex: 1 0 220px;
+}
+
+.flex-outerli input:not([type='checkbox']),
+.flex-outer li textarea{
+     padding: 15px;
+     border: none;
+}
+
+.flex-outer li button{
+    background-color:chocolate;
+    color:#fff;
+    margin: auto;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: .09em;
+
+}
