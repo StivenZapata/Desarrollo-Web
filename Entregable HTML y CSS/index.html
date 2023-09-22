@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anime World</title>
+    <style>
+        /* Estilos adicionales para la imagen */
+        img {
+            max-width: 40%; /* Ajusta el ancho máximo de la imagen al ancho de su contenedor */
+            height: auto; /* Mantiene la proporción original de la imagen */
+            display: block; /* Elimina el espacio en blanco debajo de la imagen */
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anime World</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Animes populares</a></li>
+            <li><a href="#">Géneros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Agregar imagen principal -->
+        <img src="FATE.jpg" alt="Imagen principal de FATE">
+        
+        <section>
+            <h2>Últimos Estrenos</h2>
+            <p>Descubre los últimos animes que han llegado a la pantalla. No te pierdas las emocionantes historias y los personajes cautivadores.</p>
+        </section>
+
+        <section>
+            <h2>Géneros de Anime</h2>
+            <ul>
+                <li>Acción</li>
+                <li>Aventura</li>
+                <li>Comedia</li>
+                <li>Drama</li>
+                <li>Fantasía</li>
+                <li>Magia</li>
+            </ul>
+        </section>
+    </main>
+
+    <section class="container">
+        <form>
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o comentario sobre nuestro sitio web o el mundo del anime? ¡Déjanos saber!</p>
+            <ul class="flex-outer">
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Tu correo electrónico">
+                </li>
+                <li>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea rows="6" id="mensaje" placeholder="Tu mensaje"></textarea>
+                </li>
+                <li>
+                    <button type="submit">Enviar</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Anime World</p>
+    </footer>
+</body>
+</html>
